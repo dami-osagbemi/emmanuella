@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            font-weight: 500;
+
+        }
+        .container {
+            width: 480px;
+            background-color: #ccc;
+            padding: 10px 20px;
+            margin: 0 auto;
+
+        }
+
+        input[type=text] {
+            width: 200px;
+            padding: 2px;
+            border: solid 1px #2011a9;
+            margin-bottom: 20px;
+        }
+        input[type=submit] {
+            width: 202px;
+            padding: 10px;
+            border: solid 1px #2011a9;
+            margin-bottom: 20px;
+            background-color: red;
+            color:azure;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function calculateArea() {
+            var length = document.getElementById("length").value;
+            var width = document.getElementById("width").value;
+            var area = length * width;
+            //alert("The area of the rectangle is " + area);
+            document.getElementById("result   ").innerHTML = "The area of the rectangle is: " + area + "cm";
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h4 style="text-align: center;">APP TO CALCULATE AREA OF RECTANGLE</h4>
+        <label>Length:</label><br />
+        <input type="text" id="length" class="input" placeholder="Enter Length" />cm<br />
+        <label>Width:</label><br />
+        <input type="text" id="width" class="input" placeholder="Enter Width" />cm<br />
+        <input type="submit" value="Calculate Area" onclick="calculateArea()" />
+        <div id="result"></div>
+    </div>
+
+</body>
+
+</html>

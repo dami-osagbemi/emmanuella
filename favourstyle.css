@@ -1,0 +1,15 @@
+body {
+    background-color: #06643a;
+    background-image: url("dots.jpg");
+    background-size: 100px 100px;    
+    color:#000000;
+}
+
+.menu-item {
+    background-color: #fefbaf;
+}
+
+#menu-one {
+    background-color: #ff99ee;
+
+}
